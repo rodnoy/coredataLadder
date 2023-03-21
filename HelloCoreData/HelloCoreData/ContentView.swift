@@ -7,17 +7,30 @@
 
 import SwiftUI
 
+fileprivate struct Pal{
+    static let alertTitle: String = "Hey"
+    static let alertMessage: String = "Movie name should not be empty"
+    static let alertButtonText: String = "Ok"
+}
 struct ContentView: View {
+    @State private var showingAlert: Bool = false
+    
     let storageProvider: StorageProvider
     @State private var text: String = ""
     var body: some View {
         dataList
+            .alert(Text(Pal.alertTitle), isPresented: $showingAlert) {
+                Button(Pal.alertButtonText, role: .cancel){}
+            }message: {
+                Text(Pal.alertMessage)
+            }
     }
     private func onTap(text: Binding<String>?){
         guard let value = text?.wrappedValue,
               !value.isEmpty else {
-                  return
-              }
+            showingAlert = true;
+            return
+        }
         storageProvider.saveMovie(named: value)
         $text.wrappedValue = ""
     }
@@ -27,7 +40,7 @@ struct ContentView: View {
             HStack {
                 TextField("Placeholder", text: $text)
                 Button("add") {
-                   onTap(text: $text)
+                    onTap(text: $text)
                 }
             }
         }
@@ -44,9 +57,11 @@ struct ContentView: View {
         }
         .listStyle(.automatic)
     }
+    
     @ViewBuilder func listElemet(movie: Movie) -> some View{
         Text(movie.name ?? "empty movie")
     }
+    
     private func delete(at offsets: IndexSet) {
         // delete the objects here
         let movies = storageProvider.getAllMovies()
