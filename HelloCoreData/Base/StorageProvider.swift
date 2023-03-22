@@ -42,7 +42,6 @@ extension StorageProvider {
         updateContext(named: "Movie")
     }
 }
-
 extension StorageProvider{
     func getAllMovies()->[Movie]{
         let movieFetchRequest: NSFetchRequest<Movie> = Movie.fetchRequest()
@@ -53,7 +52,6 @@ extension StorageProvider{
         }
     }
 }
-
 extension StorageProvider{
     func deleteMovie(_ movie: Movie){
         persistentContainer.viewContext.delete(movie)

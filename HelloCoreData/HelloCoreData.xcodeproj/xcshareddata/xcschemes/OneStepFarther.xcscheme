@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E99E808E29C89CB60079B08A"
-               BuildableName = "Base.app"
-               BlueprintName = "Base"
+               BlueprintIdentifier = "E9F1F7C829C9BF8700886429"
+               BuildableName = "OneStepFarther.app"
+               BlueprintName = "OneStepFarther"
                ReferencedContainer = "container:HelloCoreData.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E99E808E29C89CB60079B08A"
-            BuildableName = "Base.app"
-            BlueprintName = "Base"
+            BlueprintIdentifier = "E9F1F7C829C9BF8700886429"
+            BuildableName = "OneStepFarther.app"
+            BlueprintName = "OneStepFarther"
             ReferencedContainer = "container:HelloCoreData.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E99E808E29C89CB60079B08A"
-            BuildableName = "Base.app"
-            BlueprintName = "Base"
+            BlueprintIdentifier = "E9F1F7C829C9BF8700886429"
+            BuildableName = "OneStepFarther.app"
+            BlueprintName = "OneStepFarther"
             ReferencedContainer = "container:HelloCoreData.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
