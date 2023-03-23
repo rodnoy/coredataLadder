@@ -11,3 +11,5 @@ these ones from `AppStore`
 these ones from another source
 - https://github.com/rodnoy/trySwiftUI.git (a lot of targets with tryouts)
 - swippets (iphone)
+- https://swiftontap.com/
+- https://fuckingswiftui.com/
